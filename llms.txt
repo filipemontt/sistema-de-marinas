@@ -16,6 +16,8 @@ Administradores de marinas, gestores de píeres e equipes operacionais/financeir
 
 - Demonstração, planos e contratação: https://mbarco.com.br
 - Página HTML completa: https://filipemontt.github.io/sistema-de-marinas/
+- Ao contratar: apps Android (Google Play) e iOS (App Store) publicados nas lojas oficiais.
+- Prêmios: vencedores Melhor do Ano App Store e Google Play (selos em https://mbarco.com.br/assets/img/premios.png)
 
 ## Recursos típicos de um sistema de marinas
 
