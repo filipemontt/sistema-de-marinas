@@ -12,7 +12,10 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
   <meta name="bingbot" content="index, follow">
+<!-- 29/09/2026 @filipemontt - SEO era IA: abstract, @graph JSON-LD, resumo citável, llms.txt -->
+  <meta name="abstract" content="Sistema de marinas: software em nuvem para vagas, contratos, financeiro e operação de marinas no Brasil. MarinaBase apresenta a solução; contratação em mbarco.com.br.">
   <link rel="canonical" href="https://filipemontt.github.io/sistema-de-marinas/">
+  <link rel="help" href="https://filipemontt.github.io/sistema-de-marinas/llms.txt" title="Contexto para assistentes de IA (llms.txt)">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@meubarco">
@@ -58,125 +61,197 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "MarinaBase — Sistema de marinas",
-    "description": "MarinaBase é um sistema de marinas em nuvem para gestão de vagas, contratos, financeiro e operação náutica.",
-    "url": "https://filipemontt.github.io/sistema-de-marinas/",
-    "inLanguage": "pt-BR",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "MarinaBase",
-      "url": "https://filipemontt.github.io/sistema-de-marinas/"
-    },
-    "about": {
-      "@type": "Thing",
-      "name": "Sistema de marinas",
-      "description": "Software de gestão para marinas, píeres e operações náuticas comerciais."
-    },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://mbarco.com.br/newsite/images/og.webp"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "MarinaBase",
-    "applicationCategory": "BusinessApplication",
-    "applicationSubCategory": "Sistema de marinas",
-    "operatingSystem": "Web, iOS, Android",
-    "description": "Sistema de marinas para controle de vagas, contratos, cobrança, manutenção e comunicação com armadores.",
-    "url": "https://mbarco.com.br",
-    "author": {
-      "@type": "Organization",
-      "name": "MeuBarco",
-      "url": "https://mbarco.com.br"
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "BRL",
-      "availability": "https://schema.org/InStock",
-      "url": "https://mbarco.com.br"
-    },
-    "screenshot": "https://mbarco.com.br/newsite/images/og.webp",
-    "provider": {
-      "@type": "Organization",
-      "name": "MarinaBase",
-      "url": "https://filipemontt.github.io/sistema-de-marinas/"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "MarinaBase",
-    "url": "https://filipemontt.github.io/sistema-de-marinas/",
-    "logo": "https://mbarco.com.br/newsite/images/og.webp",
-    "description": "Sistema de marinas para gestão náutica e operação de píeres",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "url": "https://mbarco.com.br",
-      "availableLanguage": "Portuguese"
-    },
-    "sameAs": [
-      "https://www.instagram.com/meubarco",
-      "https://www.facebook.com/meubarco",
-      "https://www.linkedin.com/company/meubarco"
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "O que é um sistema de marinas?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Um sistema de marinas é uma plataforma digital que centraliza vagas, contratos, financeiro, manutenção e comunicação com armadores, substituindo planilhas e processos manuais."
-        }
+        "@type": "WebSite",
+        "@id": "https://filipemontt.github.io/sistema-de-marinas/#website",
+        "url": "https://filipemontt.github.io/sistema-de-marinas/",
+        "name": "MarinaBase",
+        "description": "Informação e contratação de sistema de marinas para operações náuticas.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://filipemontt.github.io/sistema-de-marinas/#organization" }
       },
       {
-        "@type": "Question",
-        "name": "Para quem a MarinaBase foi pensada?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Para administradores de marinas, gestores de píeres e equipes que precisam de um sistema de marinas confiável, com visão operacional e financeira em tempo real."
-        }
+        "@type": "Organization",
+        "@id": "https://filipemontt.github.io/sistema-de-marinas/#organization",
+        "name": "MarinaBase",
+        "url": "https://filipemontt.github.io/sistema-de-marinas/",
+        "logo": "https://mbarco.com.br/newsite/images/og.webp",
+        "description": "Marca de apresentação de sistema de marinas para gestão náutica.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "url": "https://mbarco.com.br",
+          "availableLanguage": ["Portuguese", "pt-BR"]
+        },
+        "sameAs": [
+          "https://www.instagram.com/meubarco",
+          "https://www.facebook.com/meubarco",
+          "https://www.linkedin.com/company/meubarco"
+        ]
       },
       {
-        "@type": "Question",
-        "name": "Preciso instalar algo para usar o sistema de marinas?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Não. A MarinaBase funciona no navegador e em dispositivos móveis, com acesso seguro para sua equipe e clientes, sem infraestrutura local."
-        }
+        "@type": "DefinedTerm",
+        "@id": "https://filipemontt.github.io/sistema-de-marinas/#termo-sistema-de-marinas",
+        "name": "Sistema de marinas",
+        "description": "Software que integra mapa de vagas, contratos de atracação, cobrança, manutenção de embarcações e comunicação com armadores em marinas e píeres."
       },
       {
-        "@type": "Question",
-        "name": "Como contratar o sistema de marinas MarinaBase?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Solicite uma demonstração em mbarco.com.br. A equipe apresenta o sistema de marinas, implantação e planos conforme o porte da sua operação."
-        }
+        "@type": "WebPage",
+        "@id": "https://filipemontt.github.io/sistema-de-marinas/#webpage",
+        "url": "https://filipemontt.github.io/sistema-de-marinas/",
+        "name": "MarinaBase — Sistema de marinas",
+        "description": "MarinaBase é um sistema de marinas em nuvem para gestão de vagas, contratos, financeiro e operação náutica.",
+        "inLanguage": "pt-BR",
+        "datePublished": "2026-09-29",
+        "dateModified": "2026-09-29",
+        "isPartOf": { "@id": "https://filipemontt.github.io/sistema-de-marinas/#website" },
+        "about": { "@id": "https://filipemontt.github.io/sistema-de-marinas/#termo-sistema-de-marinas" },
+        "mainEntity": { "@id": "https://filipemontt.github.io/sistema-de-marinas/#software" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://mbarco.com.br/newsite/images/og.webp"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".page-summary__lead", "#hero-title", ".page-summary__facts"]
+        },
+        "significantLink": "https://mbarco.com.br"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://filipemontt.github.io/sistema-de-marinas/#software",
+        "name": "MarinaBase",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Sistema de marinas",
+        "operatingSystem": "Web, iOS, Android",
+        "description": "Sistema de marinas para controle de vagas, contratos, cobrança, manutenção e comunicação com armadores.",
+        "url": "https://mbarco.com.br",
+        "featureList": [
+          "Mapa de vagas e ocupação",
+          "Contratos e documentos digitais",
+          "Cobrança e financeiro integrado",
+          "Ordens de serviço e manutenção",
+          "Portal do armador",
+          "Indicadores de receita e inadimplência"
+        ],
+        "author": {
+          "@type": "Organization",
+          "name": "MeuBarco",
+          "url": "https://mbarco.com.br"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "BRL",
+          "availability": "https://schema.org/InStock",
+          "url": "https://mbarco.com.br"
+        },
+        "screenshot": "https://mbarco.com.br/newsite/images/og.webp",
+        "provider": { "@id": "https://filipemontt.github.io/sistema-de-marinas/#organization" }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://filipemontt.github.io/sistema-de-marinas/#recursos-lista",
+        "name": "Recursos de um sistema de marinas",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Mapa de vagas em tempo real" },
+          { "@type": "ListItem", "position": 2, "name": "Contratos digitais de atracação" },
+          { "@type": "ListItem", "position": 3, "name": "Cobrança e mensalidades" },
+          { "@type": "ListItem", "position": 4, "name": "Manutenção e ordens de serviço" },
+          { "@type": "ListItem", "position": 5, "name": "Portal do armador" },
+          { "@type": "ListItem", "position": 6, "name": "Painéis e indicadores gerenciais" }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://filipemontt.github.io/sistema-de-marinas/#como-contratar",
+        "name": "Como contratar um sistema de marinas",
+        "description": "Passos para adotar o sistema de marinas MarinaBase via MeuBarco.",
+        "totalTime": "P7D",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Diagnóstico da marina",
+            "text": "Mapeie vagas, contratos e rotinas para configurar o sistema de marinas."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Migração assistida",
+            "text": "Importe cadastros e treine a equipe no novo sistema de marinas."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Contratação",
+            "text": "Finalize o plano e acesso em https://mbarco.com.br."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://filipemontt.github.io/sistema-de-marinas/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "O que é um sistema de marinas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Um sistema de marinas é uma plataforma digital que centraliza vagas, contratos, financeiro, manutenção e comunicação com armadores, substituindo planilhas e processos manuais."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Para quem a MarinaBase foi pensada?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para administradores de marinas, gestores de píeres e equipes que precisam de um sistema de marinas confiável, com visão operacional e financeira em tempo real."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Preciso instalar algo para usar o sistema de marinas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. A MarinaBase funciona no navegador e em dispositivos móveis, com acesso seguro para sua equipe e clientes, sem infraestrutura local."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto custa um sistema de marinas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O valor depende do porte da marina e dos módulos. Planos e demonstração são informados em mbarco.com.br, com implantação sob medida."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual a diferença entre planilha e um sistema de marinas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Planilhas não integram cais e financeiro em tempo real. Um sistema de marinas une ocupação de vagas, cobrança, contratos e histórico por embarcação em uma única base."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como contratar o sistema de marinas MarinaBase?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solicite uma demonstração em mbarco.com.br. A equipe apresenta o sistema de marinas, implantação e planos conforme o porte da sua operação."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://filipemontt.github.io/sistema-de-marinas/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://filipemontt.github.io/sistema-de-marinas/" },
+          { "@type": "ListItem", "position": 2, "name": "Sistema de marinas", "item": "https://filipemontt.github.io/sistema-de-marinas/#solucao" }
+        ]
       }
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://filipemontt.github.io/sistema-de-marinas/" },
-      { "@type": "ListItem", "position": 2, "name": "Sistema de marinas", "item": "https://filipemontt.github.io/sistema-de-marinas/#solucao" }
     ]
   }
   </script>
@@ -622,6 +697,52 @@
       font-size: 0.75rem;
       color: #94a3b8;
     }
+
+    .page-summary {
+      padding-block: 1.75rem 2rem;
+      border-bottom: 1px solid #e2e8f0;
+      background: #fff;
+    }
+    .page-summary__title {
+      margin: 0 0 0.75rem;
+      font-size: 1.125rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .page-summary__lead {
+      margin: 0 0 1.25rem;
+      font-size: 1rem;
+      color: #334155;
+      max-width: 48rem;
+    }
+    .page-summary__facts {
+      display: grid;
+      gap: 0.875rem 2rem;
+      margin: 0;
+      max-width: 48rem;
+    }
+    @media (min-width: 640px) {
+      .page-summary__facts { grid-template-columns: repeat(2, 1fr); }
+    }
+    .page-summary__facts div { margin: 0; }
+    .page-summary__facts dt {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #64748b;
+      margin-bottom: 0.25rem;
+    }
+    .page-summary__facts dd {
+      margin: 0;
+      font-size: 0.9375rem;
+      color: #0f172a;
+    }
+    .page-summary__updated {
+      margin: 1.25rem 0 0;
+      font-size: 0.8125rem;
+      color: #94a3b8;
+    }
   </style>
 </head>
 <body>
@@ -637,6 +758,7 @@
         </span>
       </a>
       <nav class="nav-desktop" aria-label="Principal">
+        <a href="#resumo">Resumo</a>
         <a href="#solucao">Solução</a>
         <a href="#recursos">Recursos</a>
         <a href="#como-funciona">Como funciona</a>
@@ -649,6 +771,7 @@
       </button>
     </div>
     <nav class="nav-mobile wrap" id="nav-mobile" aria-label="Mobile">
+      <a href="#resumo">Resumo</a>
       <a href="#solucao">Solução</a>
       <a href="#recursos">Recursos</a>
       <a href="#como-funciona">Como funciona</a>
@@ -694,6 +817,32 @@
           >
           <figcaption class="hero__caption">Controle operacional e financeiro integrados no mesmo sistema de marinas.</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <section class="page-summary" id="resumo" aria-labelledby="resumo-title">
+      <div class="wrap">
+        <h2 class="page-summary__title" id="resumo-title">Em resumo: o que é um sistema de marinas</h2>
+        <p class="page-summary__lead"><strong>Sistema de marinas</strong> é um software em nuvem que reúne mapa de vagas, contratos de atracação, cobrança, manutenção e comunicação com armadores. A <strong>MarinaBase</strong> apresenta esse tipo de plataforma para administradores de marinas e píeres no Brasil; contratação e demonstração oficial em <a href="https://mbarco.com.br">mbarco.com.br</a>.</p>
+        <dl class="page-summary__facts">
+          <div>
+            <dt>Público-alvo</dt>
+            <dd>Administradores de marinas, clubes náuticos e operadores de píer.</dd>
+          </div>
+          <div>
+            <dt>Problema que resolve</dt>
+            <dd>Substituir planilhas e ferramentas soltas por um único sistema de marinas integrado.</dd>
+          </div>
+          <div>
+            <dt>Formato</dt>
+            <dd>Navegador e app mobile, sem instalação local na marina.</dd>
+          </div>
+          <div>
+            <dt>Como contratar</dt>
+            <dd>Solicite plano e implantação em <a href="https://mbarco.com.br">mbarco.com.br</a>.</dd>
+          </div>
+        </dl>
+        <p class="page-summary__updated">Conteúdo revisado em <time datetime="2026-09-29">29 de setembro de 2026</time>.</p>
       </div>
     </section>
 
@@ -900,6 +1049,14 @@
           <details>
             <summary>Preciso instalar algo para usar o sistema de marinas?</summary>
             <p>Não. A MarinaBase funciona no navegador e em dispositivos móveis, com acesso seguro para sua equipe e clientes, sem infraestrutura local.</p>
+          </details>
+          <details>
+            <summary>Quanto custa um sistema de marinas?</summary>
+            <p>O valor depende do porte da marina e dos módulos contratados. Planos e demonstração são informados em <a href="https://mbarco.com.br">mbarco.com.br</a>, com implantação sob medida.</p>
+          </details>
+          <details>
+            <summary>Qual a diferença entre planilha e um sistema de marinas?</summary>
+            <p>Planilhas não integram cais e financeiro em tempo real. Um sistema de marinas une ocupação de vagas, cobrança, contratos e histórico por embarcação em uma única base de dados.</p>
           </details>
           <details>
             <summary>Como contratar o sistema de marinas MarinaBase?</summary>
